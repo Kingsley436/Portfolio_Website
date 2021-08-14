@@ -1,16 +1,18 @@
 * {
     /* background-color: red; */
     margin: 0%;
+    scroll-behavior: smooth;
 }
 
 body{
     display: flex;
     flex-direction: column;
+    /* overflow-y: hidden; */
 }
 
 /* HEADER STYLING STARTS HERE */
 #header {
-    background-color: rgba(19, 17, 17, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
     padding: 10px;
     width: 100%;
@@ -33,8 +35,20 @@ body{
 
 #nav > ul > li {
     text-decoration: none;
-    font-size: 21px;
+    font-size: 15px;
     font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#nav > ul > li > a:hover {
+    color: orange;
+    cursor: pointer;
 }
 
 /* HEADER STYLING ENDS HERE*/
@@ -42,13 +56,13 @@ body{
 /* LANDING PAGE STYLING STARTS HERE */
 
 #LandingPage {
-    /* position: absolute; */
     width: 100%;
     z-index: 0;
-    color: rgba(12, 30, 122, 0.767);
+    color: rgb(0, 0, 0);
     background-color: #4158c0;
-    background-image: linear-gradient(43deg, #4158c0 0%, #C850c0 46%, salmon 72%, yellow 108%);
-    /* background-color: salmon; */
+    background-image: url(../public/Images/Ridge-Design-Website-Design-Background.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .Details {
@@ -58,32 +72,39 @@ body{
 }
 
 .Details > h1 {
-    margin: 50px 0px 20px 10px;
+    text-align: justify;
+    margin-left: 150px;
     font-size: 150px;
+    font-family: 'Dancing Script', cursive;
     padding: 20px;
 }
 
 .Details > h3 {
-    margin-left: 10px;
-    font-size: 110px;
+    text-align: justify;
+    margin-left: 150px;
+    font-size: 100px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
     padding: 10px;
     justify-content: center;
 }
 
 .skills {
-    background-color: red;
-    margin: 50px 250px 180px 250px;
+    background-color: rgb(0, 0, 0);
+    margin: 50px 200px 180px 200px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 30px;
-    padding-top: 7px;
+    height: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-radius: 20px;
 }
  
  .skills > h5 {
-     font-size: large;
-     font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    font-weight: lighter;
  }
 
 /* LANDING PAGE STYLING ENDS HERE */
@@ -96,7 +117,8 @@ body{
     flex-direction: row;
     height: 500px;
     margin: 50px 0px 50px 0px;
-    background: rgb(255, 255, 255);
+    background: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .ImageDiv{
@@ -120,14 +142,17 @@ body{
 .Description > h3{
     text-align: center;
     margin-top: 10px;
-    font-size: 50px;
-    color: rgba(32, 30, 122, 0.767);
+    font-size: 45px;
+    color: rgba(12, 30, 122, 0.8);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border-bottom: 2px solid black;
 }
 
 .Description > p{
+    text-align: justify;
     color: rgba(12, 30, 122, 0.9);
-    font-size: 20px;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: 10px;
     padding: 5px;
 }
@@ -137,6 +162,7 @@ body{
 /* <!-- MY WORKS PAGE STARTS HERE --> */
 
 #Works{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 100px 0px 0px 0px;
     width: cover;
     padding: 40px;
@@ -145,6 +171,7 @@ body{
 
 #Works > h3{
     text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: xx-large;
     color: rgba(32, 30, 122, 0.9);
 }
@@ -198,6 +225,7 @@ Form{
 }
 
 Form > h3{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     margin: 10px;
     padding: 5px;
@@ -221,6 +249,7 @@ textarea{
 }
 
 .Submit{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 100px;
     margin-top: 30px;
     background-color: rgb(177, 49, 134);
@@ -259,6 +288,7 @@ textarea{
 }
 
 Footer > h3{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     font-size: xx-large;
     color: rgba(32, 30, 122, 0.9);
@@ -266,6 +296,7 @@ Footer > h3{
 }
 
 Footer > h4,h5{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgba(32, 30, 122, 0.9);
     text-align: center;
 }
